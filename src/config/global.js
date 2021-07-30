@@ -256,48 +256,83 @@ export default {
     },
   ],
   creditos: {
-    liderEquipo: {
-      nombre: 'Rafael Nelftalí Lizcano Reyes',
-      cargo: 'Asesor metodológico y pedagógico',
-      centro: 'Centro Industrial del Diseño y la Manufactura',
-    },
+    liderEquipo: [
+      {
+        nombre: 'Maria Camila García Santamaría',
+        cargo: 'Líder del equipo',
+        centro: 'Dirección General',
+      },
+    ],
     contenidoInstruccional: [
       {
-        nombre: 'Henry Eduardo Bastidas Paruma',
-        cargo: 'Experto temático',
+        nombre: 'Rafael Neftalí Lizcano Reyes',
+        cargo: 'Asesor metodológico y pedagógico',
         centro:
-          'Regional Cauca, Centro de teleinformática y producción industrial',
+          'Centro Industrial del Diseño y la Manufactura  - Regional Santander',
+      },
+      {
+        nombre: 'Henry Eduardo Bastidas Paruma',
+        cargo: 'Experto Temático',
+        centro:
+          'Centro de Teleinformática y Producción Industrial - Regional Cauca',
       },
       {
         nombre: 'Peter Emerson Pinchao Solis',
-        cargo: 'Experto temático ',
-        centro:
-          'Regional Cauca, Centro de teleinformática y producción industrial',
+        cargo: 'Experto Temático',
+        centro: 'Centro agropecuario La Granja - Regional Tolima',
+      },
+      {
+        nombre: 'Fabián Leonardo Correa Díaz',
+        cargo: 'Diseñador instruccional',
+        centro: 'Centro agropecuario La Granja - Regional Tolima',
+      },
+      {
+        nombre: 'Uriel Darío González Montoya',
+        cargo: 'Revisión  y corrección de estilo',
+        centro: 'Centro agropecuario La Granja - Regional Tolima',
       },
       {
         nombre: 'Oscar Absalón Guevara',
-        cargo: 'Evaluador instruccional ',
-        centro: 'Regional distrito capital – Centro de Gestión Industrial',
+        cargo: 'Evaluador instruccional',
+        centro: 'Regional Distrito Capital - Centro de Gestión Industrial',
       },
     ],
     desarrolloProducto: [
       {
-        nombre: 'Fabián Leonardo Correa Díaz',
-        cargo: 'Diseñador Instruccional',
-        centro: 'Centro agropecuario La Granja, Regional Tolima',
+        nombre: 'Francisco José Lizcano Reyes',
+        cargo: 'Responsable del equipo',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura  - Regional Santander',
       },
       {
-        nombre: 'Uriel Darío González Montoya',
-        cargo: 'Revisión y corrección de estilo',
-        centro: 'Regional Tolima – Centro Agroindustrial La Granja',
+        nombre: 'Leyson Fabian Castaño Perez',
+        cargo: 'Soporte organizacional',
+        centro: 'Centro de Comercio y Servicios - Regional Tolima',
+      },
+      {
+        nombre: 'Luis Fernando Sarmiento Betancourth',
+        cargo: 'Diseño web',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura  - Regional Santander',
+      },
+      {
+        nombre: 'Lizeth Karina Manchego Suárez',
+        cargo: 'Desarrollo front-end',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura  - Regional Santander',
+      },
+      {
+        nombre: 'María Camila Ovalle Ospina',
+        cargo: 'Validación de diseño y contenido',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura  - Regional Santander',
       },
     ],
     gestoresRepositorio: [
       {
         nombre: 'Milady Tatiana Villamil Castellanos',
-        cargo: ['Validación y vinculación en plataforma LMS'],
-        centro: 'Centro de Comercio y Servicios',
-        regional: 'Regional Tolima',
+        cargo: 'Validación y vinculación en plataforma LMS',
+        centro: 'Centro de Comercio y Servicios - Regional Tolima',
       },
     ],
   },

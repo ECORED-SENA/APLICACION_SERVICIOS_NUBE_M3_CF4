@@ -42,10 +42,6 @@
                 p.mb-0 &lt;db.libros.insert(documento)WriteResult({ “nInserted” : 1 })&gt;
               
 
-      div(titulo="Actualizar documento")
-        p Tiene todas las funciones de .insert(), pero además permite actualizar un documento si ya existe el _id de dicho documento. En ese caso, .insert() mostraría una excepción.
-        figure.mt-4
-          img(src="@/assets/template/tema3-3.png" , alt="Texto que describa la imagen")
       div(titulo="Insertar varios simultáneamente")
         p Se pueden insertar varios a la vez:
         .row 
@@ -87,6 +83,35 @@
                 p.mx-4.mb-0 }
               .col-12
                 p.mb-0 ]
+              .col-12
+                p.mb-0 &lt;db.libros.insert(documentos) = [{
+              .col-12
+                p.mx-1.mb-0 BulkWriteResult({
+              .col-12
+                p.mx-5.mb-0 “writeErrors” : [ ],
+              .col-12
+                p.mx-5.mb-0 “writeConcernErrors” : [ ],
+              .col-12
+                p.mx-5.mb-0 “nInserted” : 2,
+              .col-12
+                p.mx-5.mb-0 “nUpserted” : 0,
+              .col-12
+                p.mx-5.mb-0 “nMatched” : 0,
+              .col-12
+                p.mx-5.mb-0 “nModified” : 0,
+              .col-12
+                p.mx-5.mb-0 “nRemoved” : 0,
+              .col-12
+                p.mx-5.mb-0 “upserted” : [ ],
+              .col-12
+                p.mx-4.mb-0 })
+                .col-12
+                p.mb-0 &gt;
+      div(titulo="Actualizar documento")
+        p Tiene todas las funciones de .insert(), pero además permite actualizar un documento si ya existe el _id de dicho documento. En ese caso, .insert() mostraría una excepción.
+        figure.mt-4
+          img(src="@/assets/template/tema3-3.png" , alt="Texto que describa la imagen")
+      
     .titulo-segundo.mt-5
       #t_3_2.h4 3.2  Leer y consultar colecciones
     p.mt-5 Cuando de la función leer y consultar la información se trata, la forma básica consiste en usar el método find() de la colección, tal como ya se ha dicho en un punto anterior de este componente formativo.
@@ -186,12 +211,13 @@
               figure
                 img(src="@/assets/template/tema3-5.svg" , alt="Texto que describa la imagen").w-75
             .col-12.col-lg-9
-              p.mb-0 El método remove() elimina uno o más documentos de una colección. Recibe parámetros para realizar una eliminación selectiva; si no se le pasa ningún parámetro, elimina todos los documentos de la colección #[strong (Graterol, 2014).] Esto nos conduce a concluir que las bases de datos no relacionales son más sencillas de administrar, al no tener que hacer uso de estructuras complejas e interrelacionadas.
+              p.mb-0 El método remove() elimina uno o más documentos de una colección. Recibe parámetros para realizar una eliminación selectiva; si no se le pasa ningún parámetro, elimina todos los documentos de la colección #[strong (Graterol, 2014).] Esto nos conduce a concluir que las bases de datos #[strong no relacionales] son más sencillas de administrar, al no tener que hacer uso de estructuras complejas e interrelacionadas.
     .row.mx-0.mt-3
       .col-8.offset-2
         .row.rounded.bg-gris-oscuro.p-5.font-console
           .col-12
-            p.mb-0 &lt; db.libros.remove({“_id”: ObjectId(“60d159df1e0ed70729ced13f”) }) WriteResult({ “nRemoved” : 1 }) &gt;
+            p.mb-0 &lt;db.libros.remove({“_id”: ObjectId(“60d159df1e0ed70729ced13f”) }) WriteResult({ “nRemoved” : 1 }) 
+            p &gt;
     .row.mt-5 
       .col-8.offset-2
         .cajon.color-primario.p-4.mb-4.bg-azul-claro
@@ -201,9 +227,12 @@
       .col-8.offset-2
         .row.rounded.bg-gris-oscuro.p-5.font-console
           .col-12
-            p.mb-0 &lt; db.libros.drop(); true &gt;
+            p.mb-0 &gt; db.libros.drop(); 
+            p.mb-0  true            
+            p.mb-0 &gt; show collections
           .col-12
-            p.mb-0 &lt; show collections coleccion_personas &gt;
+            p.mb-0 coleccion_personas 
+            p.mb-0 &gt;
 
 
 

@@ -51,7 +51,7 @@
     .row.mt-5
       .col-8.offset-2
         .h4 Tabla 1
-        .tabla-a.color-acento-botones.mt-4 
+        .tabla-a.color-acento-botones.mt-4.scroll-x-tabla 
           table
             caption Comparación de las funciones de NoSQL
             thead
@@ -87,9 +87,9 @@
     p.mt-5 A continuación, se presentan algunas ventajas y desventajas que tiene cada uno de estos tipos de bases de datos:
     .row.mt-5
       .col-12
-        .tabla-a.color-primario.mt-4 
+        .tabla-a.color-primario.mt-4.scroll-x-tabla  
           table
-            caption Comparación de las funciones de NoSQL
+            
             thead
               tr
                 th Ventajas
@@ -107,7 +107,7 @@
                   p Contrario a las bases de datos relacionales, las NoSQL están basadas en key-value pairs (clave valor).
                   p.mt-3 Las NoSQL tienen diferentes tipos de almacenamiento, como el almacén de columnas, documentos, claves, valor de gráficos (capas), objetos, en formato XML y otros modos de tipos de datos. Las bases de datos NoSQL de código abierto tienen una implementación rentable económicamente, al no requerir licencias ni hardware de precio alto.
                   p.mt-3 Trabajando con bases de datos NoSQL, la expansión de funcionalidades es más fácil y más económica que usando bases de datos relacionales. 
-                td.py-3 
+                td.py-3
                   p Casi todas las bases NoSQL no admiten funciones de fiabilidad o integridad de los datos, mientras que las bases de datos relacionales, sí. Las bases NoSQL no soportan las funcionalidades o restricciones de consistencia en los datos. Para garantizar la integridad, es responsabilidad de los desarrolladores implementar con código propio, lo que agrega más complejidad al sistema.
                   p.mt-3 La falta de integridad referencial en los datos hace que no sean fiables para realizar transacciones seguras, como en los sistemas bancarios, donde la integridad de los datos es primordial. Otras formas de complejidad encontradas en la mayoría de las bases de datos NoSQL incluyen la incompatibilidad con consultas SQL; se necesita un lenguaje de consulta manual, haciendo los procesos mucho más lentos y complejos.
     .titulo-segundo.mt-5
@@ -149,7 +149,7 @@
                   li  
                     i.fas.fa-database
                     | #[strong Teléfono:] 3168272372
-              .col-6
+              .col-auto
                 ul.lista-ul--color
                   li 
                     i.fas.fa-database
@@ -179,9 +179,10 @@
     .row.mt-4
       .col-8.offset-2.offset-lg-3
         .h4 Tabla 3
-        .tabla-a.color-acento-botones.mt-4 
+        p Ejemplo 2 de base de datos
+        .tabla-a.color-acento-botones.mt-4.scroll-x-tabla  
           table
-            caption Ejemplo 2 de base de datos
+            caption 
             thead
               tr
                 th Clave
@@ -243,7 +244,7 @@
             .p-4
               h2 Formato XML
               p XML, sigla en inglés de eXtensible Markup Language, traducido como “Lenguaje de Marcado Extensible” o “Lenguaje de Marcas Extensible”, es un metalenguaje que permite definir lenguajes de marcas, desarrollado por el World Wide Web Consortium (W3C), utilizado para almacenar datos en forma legible. Proviene del lenguaje SGML y permite definir la gramática de lenguajes específicos (de la misma manera que HTML es, a su vez, un lenguaje definido por SGML) para estructurar documentos grandes. A diferencia de otros lenguajes, XML da soporte a bases de datos, siendo útil cuando varias aplicaciones deben comunicarse entre sí o integrar información. #[strong (Wikipedia, 2021).]
-    .h4.mt-5 Bases de datos orientadas a documentos.
+    .h4.mt-5 Modelar información.
     p.mt-5 Suponga que se desea modelar la información contenida en un mensaje de correo electrónico.
     .row.mt-5 
       .col-12.col-lg-10.col-xl-8.offset-lg-1.offset-xl-2
@@ -347,7 +348,7 @@
           .col-12
             p.mb-0 }
     figcaption.mt-4 Note cómo “nombres” es la clave y “JUAN CARLOS” es el valor. De la misma forma como “edad” es la clave y 65 el valor.
-    .h4.mt-5 Ejemplos
+    .h4.mt-5 Ejemplo
     p.mt-4 Suponga que necesita modelar un menú de una aplicación como se muestra a continuación:
     .row.mt-5
       .col-6.col-lg-3.offset-2.offset-1
@@ -367,14 +368,13 @@
     p.mt-4 Ejemplo
     .row.mt-4
       .col-12
-        .h4 Tabla 3
-        .tabla-a.color-primario.mt-4 
+        tabla-a.color-primario.mt-4 
           table
-            caption Ejemplo 2 de base de datos
+            caption 
             thead
               tr
-                th Clave
-                th Valor
+                th Su representación en XML
+                th Su equivalente en JSON
             tbody
               tr
                 td.p-4 

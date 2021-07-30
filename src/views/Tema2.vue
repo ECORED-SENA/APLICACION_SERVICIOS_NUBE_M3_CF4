@@ -51,23 +51,27 @@
           .anexo__texto
             p #[strong Enlace web.] https://www.mongodb.com/
     p.mt-4 Estando allí, haga clic en Software y Community Server para aplicar los pasos:
-    .row
+    .row.mt-5
       .col-10.offset-1
-        .tarjeta.color-primario.p-3.mt-5
+        .tarjeta.color-primario.p-3.mb-5
           .row.justify-content-around.align-items-center
-            .col-3.col-sm-2.col-lg-2
-              img(src="@/assets/template/tema2-5.svg").w-75
+            .col-3.col-sm-2.col-lg-1
+              img(src="@/assets/template/tema2-5.svg")
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0
-                  figure
-                    img(src="@/assets/template/tema2-6.png", alt="alt").w-75
+                  .row
+                    .col-3.col-sm-2.col-lg-1
+                      figure
+                        img(src="@/assets/template/tema-2-6.svg")
+                    .col.px-0.pt-3
+                      p.texto-blanco Instalación de MongoDB
                 .col-sm-auto
-                  a.boton.color-acento-botones(:href="obtenerLink('/downloads/Instalacion_MongoDB.pdf')" target="_blank")
+                  a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/Instalacion_MongoDB.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
     .titulo-segundo.mt-5
-      #t_2_3.h4 2.3  Instalación de MongoDB
+      #t_2_3.h4 2.3 Consola interactiva
     figure.mt-4
       img(src="@/assets/template/tema2-7.png" , alt="Texto que describa la imagen")
     p.mt-5 MongoDB tiene, al igual que todas las bases de datos, una interfaz de línea de comando (CLI), desde la cual se puede acceder a un API de las funcionalidades. Podemos acceder a su consola interactiva y realizar nuestras primeras interacciones con MongoDB.
@@ -203,12 +207,12 @@
         figure.mt-4
           img(src="@/assets/template/tema2-12.png" , alt="Texto que describa la imagen")
       div(titulo="Crear base de datos")
-        p El comando use se usa también para crear una nueva base de datos. El comando sería ‘use pruebas’:
+        p El comando #[strong use] se usa también para crear una nueva base de datos. El comando sería ‘use pruebas’:
         .h4.mt-4 Figura 21
         p.mt-4 Use pruebas
         figure.mt-4
           img(src="@/assets/template/tema2-13.png" , alt="Texto que describa la imagen")
-        p.mt-3 El comando show dbs no mostrará esta base de datos hasta que exista el primer documento. 
+        p.mt-3 El comando #[strong show dbs] no mostrará esta base de datos hasta que exista el primer documento. 
     .titulo-segundo.mt-5
       #t_2_4.h4 2.4  Crear primer documento
     .row.mt-4
@@ -218,7 +222,7 @@
             figure
               img(src="@/assets/template/tema2-14.png" alt="Texto que describa la imagen")
           .col-8.align-self-center
-            p Se creará una base de datos y una colección, y eso se hará almacenando un documento usando el objeto db, pero primero se debe ejecutar el comando use. Un documento puede tener, en teoría, un máximo de hasta 16MB de información.
+            p Se creará una base de datos y una colección, y eso se hará almacenando un documento usando el objeto #[strong db], pero primero se debe ejecutar el comando #[strong use]. Un documento puede tener, en teoría, un máximo de hasta 16MB de información.
     .row.mt-5 
       .col-10.offset-1
         .cajon.color-primario.p-4.mb-4.bg-azul-claro
@@ -262,7 +266,7 @@
                 img(src="@/assets/template/tema2-16.svg" , alt="Texto que describa la imagen")
             .col-12.col-lg-10
               .h4 Llave primaria
-              p Note que existe un atributo que nunca se definió, llamado _id. Este es un índice, que es lo equivalente a llave primaria.
+              p Note que existe un atributo que nunca se definió, llamado #[strong _id]. Este es un índice, que es lo equivalente a llave primaria.
 
 
 </template>
