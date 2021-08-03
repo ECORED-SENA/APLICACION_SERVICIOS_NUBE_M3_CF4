@@ -102,7 +102,7 @@
               .col-12
                 p.mx-5.mb-0 “nRemoved” : 0,
               .col-12
-                p.mx-5.mb-0 “upserted” : [ ],
+                p.mx-5.mb-0 “upserted” : [ ]
               .col-12
                 p.mx-4.mb-0 })
                 .col-12
@@ -200,7 +200,9 @@
       .col-8.offset-2
         .row.rounded.bg-gris-oscuro.p-5.font-console
           .col-12
-            p.mb-0 &lt; db.libros.update({“_id”: ObjectId(“60d159df1e0ed70729ced13f”) },{“titulo”:”Titulo Modificado”}) WriteResult({ “nMatched” : 1, “nUpserted” : 0, “nModified” : 1 }) &gt;
+            p.mb-0 &gt; db.libros.update({“_id”: ObjectId(“60d159df1e0ed70729ced13f”) },{“titulo”:”Titulo Modificado”}) 
+            p.mb-0 WriteResult({ “nMatched” : 1, “nUpserted” : 0, “nModified” : 1 }) 
+            p &gt;
     .titulo-segundo.mt-5
       #t_3_4.h4 3.4   Borrar documentos   
     .row.mt-5 

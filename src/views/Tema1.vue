@@ -301,7 +301,7 @@
           .tarjeta.borde-gris
             .p-4
               h2 Formato JSON
-              p JSON (acrónimo de JavaScript Object Notation, «notación de objeto de JavaScript») es un formato de texto sencillo para el intercambio de datos. Se trata de un subconjunto de la notación literal de objetos de JavaScript, aunque, debido a su amplia adopción como alternativa a XML, se considera (año 2019) un formato independiente del lenguaje (Wikipedia, 2021).
+              p JSON (acrónimo de JavaScript <i>Object Notation</i>, «notación de objeto de JavaScript») es un formato de texto sencillo para el intercambio de datos. Se trata de un subconjunto de la notación literal de objetos de JavaScript, aunque, debido a su amplia adopción como alternativa a XML, se considera (año 2019) un formato independiente del lenguaje (Wikipedia, 2021).
     .row.mt-5
       .col-10.offset-1
         //- LineaTiempoD debe ir acompañado de una de una de estas clases => 
@@ -313,9 +313,9 @@
 
           p.text-small(numero="3" titulo="Arreglos") Representan una lista con ninguno o más valores, los cuales pueden ser todos del mismo o de diferente tipo. Los valores separados por comas y el vector, entre llaves ([]). Ejemplo [“Luis”,”Carlos”,”Julian”,99] 
 
-          p.text-small(numero="4" titulo="Booleanos") Representan valores booleanos y pueden tener dos valores: true y false
+          p.text-small(numero="4" titulo="Booleanos") Representan valores booleanos y pueden tener dos valores: <i>true y false</i>
 
-          p.text-small(numero="5" titulo="Valores nulos") Representan el valor nulo (null)
+          p.text-small(numero="5" titulo="Valores nulos") Representan el valor nulo (<i>null</i>)
 
           p.text-small(numero="6" titulo="Objetos") Son colecciones no ordenadas de pares de la forma &lt;nombre&gt;:&lt;valor&gt;, donde el nombre debe ser separado por comas y puestos entre corchetes ({})
     .h4.mt-5 Bases de datos no relaciones no documentadas
