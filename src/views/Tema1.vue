@@ -20,7 +20,7 @@
             img(src="@/assets/template/tema1-2.svg", alt="Texto que describa la imagen") 
     
     .titulo-segundo.mt-5
-      #t_1_1.h4 1.1  Definición del NoSQL
+      #t_1_1.h4 1.1  Definición de NoSQL
     .row.mt-4
       .col-12.col-lg-8
         p La web 2.0 (donde quienes suministran el contenido son los usuarios) trajo grandes necesidades de datos e infraestructura tecnológica, principalmente, para empresas como Google, Amazon y Facebook. Ellos tuvieron que buscar soluciones propias a estos problemas, enfocados en la gran cantidad de almacenamiento y el crecimiento de sistemas web con acceso a información en tiempo real, donde surgió la necesidad de proporcionar información gestionada y procesada desde grandes volúmenes de datos. Debido a que las bases de datos relacionales no responden de forma adecuada a esta necesidad, para la exigencia en tiempos de demanda, nacen las bases de datos NoSQL.
@@ -318,7 +318,7 @@
           p.text-small(numero="5" titulo="Valores nulos") Representan el valor nulo (<i>null</i>)
 
           p.text-small(numero="6" titulo="Objetos") Son colecciones no ordenadas de pares de la forma &lt;nombre&gt;:&lt;valor&gt;, donde el nombre debe ser separado por comas y puestos entre corchetes ({})
-    .h4.mt-5 Bases de datos no relaciones no documentadas
+    .h4.mt-5 Bases de datos no relacionales no documentadas
     p.mt-4 Las bases de datos no relacionales documentales y su concepto de guardar la información con el modelo clave/valor. Es por eso que los documentos más comunes son en formato JSON. La diferencia radica en que un documento se almacena en una clave. Esta definición puede parecer abstracta, se explica mejor con un ejemplo:
     .row.mt-5 
       .col-12.col-lg-10.col-xl-8.offset-lg-1.offset-xl-2
